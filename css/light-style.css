@@ -19,11 +19,11 @@
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 55px;
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   overflow: auto;
   background-color: #000000b2;
 }
@@ -34,8 +34,8 @@
   background-color: #fefefe;
   margin: auto;
   padding: 0;
-  width: 70%;
-  max-width: 1200px;
+  width: 90%;
+  max-width: 1000px;
 }
 
 /* The Close Button */
@@ -100,13 +100,13 @@
   top: 0;
 }
 
-/* Caption text */
+/* Caption text
 .caption-container {
   text-align: center;
   background-color: black;
   padding: 2px 16px;
   color: white;
-}
+} */
 
 img.demo {
   opacity: 0.6;
