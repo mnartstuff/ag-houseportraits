@@ -1,0 +1,380 @@
+*{
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 16px;
+    color: #2b2b2b;
+    box-sizing: border-box;
+}
+
+a{
+    /* color: #333333; */
+}
+
+#header-contain{
+    
+}
+.navbar-brand{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#header-title{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#header-contain h2{
+	font-size: 1.2rem;
+}
+
+#nav-row{
+    width: inherit;
+}
+
+#nav-top{
+    width: inherit;
+    border-bottom: 2px #333333 solid;
+    padding-bottom: 10px;
+}
+.navbar-toggler{
+    display: block;
+    text-align: center;
+    margin: 1rem auto;
+}
+#navbar-top{
+    flex-direction: row-reverse;
+}
+#navbar-list a{
+    padding: 0 1.2rem;
+}
+#navbar-list .nav-link, .navbar-light .navbar-nav .nav-link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+	font-size: 1.5rem;
+    /* color: #000000; */
+	text-decoration: none;
+	transition: 0.1s;
+}
+.nav-link:hover{
+    /* opacity: .5; */
+}
+
+#ext-link{
+    width: inherit;
+    margin-top: 10px;
+}
+
+.sml img{
+    width: auto;
+}
+
+#fb:hover, #in:hover{
+	opacity: 0.5;
+}
+
+
+/*****    FOOTER    *****/
+
+footer{
+    background: rgb(245,245,245);
+    padding-top: 1.6rem;
+    padding-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+#alp-item{
+    max-width: 300px;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+#alp-link img:hover{
+    opacity: 0.6;
+}
+#alp-item p{
+    text-align: left;
+    margin-top: 1.2rem;
+    font-size: .8rem;
+}
+
+#copy-1{
+    font-size: .8rem;
+    display: block;
+    text-align: center;
+    margin: 2rem auto 0 auto;
+}
+
+/*****      GENERAL      *****/
+
+
+#top-container{
+    background: rgb(245,245,245);
+}
+.top-borders{
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1.6rem 0;
+}
+.top-borders p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+
+/*****     HOME PAGE     *****/
+
+
+.home-tile img{
+    width: 100%;
+}
+#home-text p{
+    text-align: justify;
+}
+
+
+/*****    GALLERY    *****/
+
+
+.cite-1{
+    font-style: italic;
+    font-size: 2.5rem;
+    line-height: 1;
+}
+.cite{
+    font-style: italic;
+}
+
+
+
+.gal figure{
+    width: 100%;
+    max-width: 490px;
+}
+.galpic-sm{
+    width: 100%;
+}
+figcaption{
+	padding: 0 20%;
+	text-align: center;
+	margin: auto;
+	line-height: 1.2em;
+	margin: 10px 5px;
+	font-size: .8em;
+}
+
+#gallery-page p{
+    text-align: justify;
+    padding-top: 10px;
+}
+
+
+/*****    ABOUT    *****/
+
+
+#me-tile{
+    max-width: 540px;
+    position: relative;
+}
+#me-pic{
+    padding: .6rem;
+    border-radius: .6rem;
+    background: #fff;
+}
+#art-bg{
+    opacity: .3;
+}
+
+
+/*****    COMMISSION    *****/
+
+.tile-header{
+    text-align: center;
+    margin: 0 auto 1rem;
+}
+.pic{
+    padding: 10%;
+}
+
+
+/*****    MEDIA QUERIES    *****/
+
+@media all and (min-width: 1200px){
+    #di-tile{
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+/** ABOUT **/
+    #art-bg{
+        margin-top: 2rem;
+        background-image: url(../images/art-xl.png);
+        width: 1140px;
+        height: 346px;
+    }
+}
+
+@media all and (min-width: 992px){
+
+    #me-pic{
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media all and (min-width: 992px) and (max-width: 1199px){
+    /** ABOUT **/
+    #art-bg{
+        margin-top: 2rem;
+        background-image: url(../images/art-lg.png);
+        width: 960px;
+        height: 291px;
+    }
+}
+
+@media all and (min-width: 768px){
+    .navbar-brand{
+        text-align: left;
+        margin-left: 0;
+    }
+    #header-title{
+        text-align: right;
+        margin-right: 0;
+    }
+    #header-title h1{
+        margin-bottom: 0;
+    }
+    
+    #navbar-list li:last-child a{
+        padding-right: 0;
+    }
+    
+    /****  HOMEPAGE  ****/
+
+    #home-text p{
+        font-size: 1.2rem;
+    }
+
+    /****  GALLERY  ****/
+    figcaption{
+        font-size: 1rem;
+    }
+    
+    /****  GENERAL  ****/
+    .home-top{
+        position: relative;
+    }
+  
+}
+
+@media all and (min-width: 768px) and (max-width: 991px){
+    /** ABOUT **/
+    #art-bg{
+        margin-top: 2rem;
+        background-image: url(../images/art-md.png);
+        width: 720px;
+        height: 218px;
+    }
+}
+
+@media all and (min-width: 576px) and (max-width: 991px){
+    .navbar-brand{
+        width: 80%;
+    }
+    .navbar-brand img{
+        width: 100%;
+    }
+    #header-title h1{
+        font-size: 2rem;;
+    }
+    #header-title h2{
+        font-size: 1rem;
+    }
+}
+
+@media all and (max-width: 767px){
+    #ext-contact a{
+
+        margin-bottom: 2rem;
+    }
+}
+
+@media all and (min-width: 576px) and (max-width: 767px){
+    /** ABOUT **/
+    #art-bg{
+        margin-top: 2rem;
+        background-image: url(../images/art-sm.png);
+        width: 540px;
+        height: 164px;
+    }
+}
+
+@media all and (min-width: 576px){
+    .title-break{
+		display: none;
+	}
+    .navbar-expand-sm .navbar-nav{
+        flex-direction: column;
+    }
+    .navbar-expand-sm .navbar-nav .nav-link {
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+    header{
+        padding-top: 40px;
+    }
+    
+    #in{
+        padding-right: 0;
+    }
+
+    
+}
+
+@media all and (max-width: 575px){
+    .navbar-brand{
+        width: 80%;
+    }
+    .navbar-brand img{
+        width: 100%;
+    }
+    h1{
+        font-size: 1.7rem;
+    }
+    #header-title h2{
+        font-size: 1rem;
+    }
+    h4{
+        font-size: 1rem;
+    }
+    #nav-top{
+        text-align: center;
+        margin: auto;
+    }
+    .nav{
+		display: block;
+		margin-top: 15px;
+	}
+    .nav-item{
+		display: block;
+		text-align: center;
+		margin: auto;
+		padding: 12px;
+		line-height: 1.2em;
+    }
+
+    #ext-link{
+        text-align: center;
+        margin: auto;
+    }
+    .sml, #ext-link .nav-item{
+        display: inline-block;
+    }
+    /*** FOOTER ***/
+    #ext-contact a, #alp-item{
+        margin-left: 1.2rem;
+    }
+
+    /** ABOUT **/
+    #art-bg{
+        display: none;
+    }
+}
