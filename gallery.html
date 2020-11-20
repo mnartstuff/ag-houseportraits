@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Alex Geer House Photos</title>
+	<title>Lightbox Test</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-	<link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/light-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+    <script src="js/lightbox.js"></script>
 </head>
 
 <body>
@@ -44,9 +46,6 @@
 							<li class="nav-item">
 								<a class="nav-link" href="commission.html">Commission/Contact</a>
 							</li>
-							<!-- <li class="nav-item">
-								<a class="nav-link" href="contact.html">Contact</a>
-							</li> -->
 							
 						</ul>
 							
@@ -99,7 +98,7 @@
 				<div class="gal col-md-6">
 					<figure>
 						<div id="martel" alt="Martel House" class="galpic"></div>
-						<img class="galpic-sm" src="images/gal-3-martel-sm.png" alt="house portrait">
+						<img class="galpic-sm hover-shadow" src="images/gal-3-martel-sm.png" alt="house portrait" onclick="openModal();currentSlide(1)">
 						<figcaption>Brockton, Massachusetts.</figcaption>
 					</figure>
 				</div>
@@ -107,7 +106,7 @@
 				<div class="gal col-md-6">
 					<figure>
 						<div id="letitbe" alt="Let It Be House" class="galpic"></div>
-						<img class="galpic-sm" src="images/gal-2-letitbe-sm.png" alt="house portrait">
+						<img class="galpic-sm hover-shadow" src="images/gal-2-letitbe-sm.png" alt="house portrait" onclick="openModal();currentSlide(2)">
 						<figcaption>Let it Bet house, Minneapolis.</figcaption>
 					</figure>
 				</div>
@@ -115,7 +114,7 @@
 				<div class="gal col-md-6">
 					<figure>
 						<div id="purelm" alt="Purcell and Elmslie" class="galpic"></div>
-						<img class="galpic-sm" src="images/gal-6-purelm-sm.png" alt="house portrait">
+						<img class="galpic-sm hover-shadow" src="images/gal-6-purelm-sm.png" alt="house portrait" onclick="openModal();currentSlide(3)">
 						<figcaption>South Minneapolis house by Prairie School architects Purcell and Elmslie.</figcaption>
 					</figure>
 				</div>
@@ -123,7 +122,7 @@
 				<div class="gal col-md-6">
 					<figure>
 						<div id="aa" alt="Fairmount Ave, St Paul" class="galpic"></div>
-						<img class="galpic-sm" src="images/gal-1-aa-sm.png" alt="house portrait">
+						<img class="galpic-sm hover-shadow" src="images/gal-1-aa-sm.png" alt="house portrait" onclick="openModal();currentSlide(4)">
 						<figcaption>Fairmount Ave. St. Paul.</figcaption>
 					</figure>
 				</div>
@@ -131,7 +130,7 @@
 				<div class="gal col-md-6">
 					<figure>
 						<div id="ueland" alt="Ueland House" class="galpic"></div>
-						<img class="galpic-sm" src="images/gal-4-ueland-sm.png" alt="house portrait">
+						<img class="galpic-sm hover-shadow" src="images/gal-4-ueland-sm.png" alt="house portrait" onclick="openModal();currentSlide(5)">
 						<figcaption>Brenda Ueland's house. Lake Harriet, Minneapolis. Demolished 2017.</figcaption>
 					</figure>
 				</div>
@@ -139,7 +138,7 @@
 				<div class="gal col-md-6">
 					<figure>
 						<div id="egg" alt="Egg and I" class="galpic"></div>
-						<img class="galpic-sm" src="images/gal-5-egg-sm.png" alt="house portrait">
+						<img class="galpic-sm hover-shadow" src="images/gal-5-egg-sm.png" alt="house portrait" onclick="openModal();currentSlide(6)">
 						<figcaption>The Egg and I diner, Lyndale, Minneapolis. 1980-2020.</figcaption>
 					</figure>
 				</div>
@@ -147,7 +146,7 @@
 				<div class="gal col-md-6">
 					<figure>
 						<div id="abbot" alt="Bricks" class="galpic"></div>
-						<img class="galpic-sm" src="images/gal-7-abbot-sm.png" alt="house portrait">
+						<img class="galpic-sm hover-shadow" src="images/gal-7-abbot-sm.png" alt="house portrait" onclick="openModal();currentSlide(7)">
 						<figcaption>Lake Harriet West area, Minneapolis.</figcaption>
 					</figure>
 				</div>
@@ -155,7 +154,7 @@
 				<div class="gal col-md-6">
 					<figure>
 						<div id="second" alt="3045" class="galpic"></div>
-						<img class="galpic-sm" src="images/gal-8-3045-sm.png" alt="house portrait">
+						<img class="galpic-sm hover-shadow" src="images/gal-8-3045-sm.png" alt="house portrait" onclick="openModal();currentSlide(8)">
 						<figcaption>3045 2nd Ave. So. Minneapolis. My first commission.
 						I painted this with
 							<a href="http://tigeroxpainting.com/" target="blank">TigerOx Painting</a> in the 
@@ -169,7 +168,7 @@
 				<div class="gal col-md-6">
 					<figure>
 						<div id="girard" alt="Girard Ave" class="galpic"></div>
-						<img class="galpic-sm" src="images/gal-9-girard-sm.png" alt="house portrait">
+						<img class="galpic-sm hover-shadow" src="images/gal-9-girard-sm.png" alt="house portrait" onclick="openModal();currentSlide(9)">
 						<figcaption>
 							Four houses formerly on Girard Ave. So. Minneapolis. Bulldozed in early 2020.
 						</figcaption>
@@ -179,7 +178,7 @@
 				<div class="gal col-md-6">
 					<figure>
 						<div id="lein" alt="Mixed Media Collaboration" class="galpic"></div>
-						<img class="galpic-sm" src="images/gal-10-lein-sm.png" alt="house portrait">
+						<img class="galpic-sm hover-shadow" src="images/gal-10-lein-sm.png" alt="house portrait" onclick="openModal();currentSlide(10)">
 						<figcaption>
 							A collaborative effort along with the very talented 
 							<a href="https://www.instagram.com/theartofaprince/?hl=en" target="_blank" class="feet">
@@ -188,14 +187,84 @@
 						</figcaption>
 					</figure>
 				</div>
-				
+
 				<!-- end row -->
 			</section>
 
 			<!-- end container -->
 		</div>
 
-	</main>
+    </main>
+    
+                   
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-section">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 10</div>
+        <img src="images/martel_print.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 10</div>
+        <img src="images/letitbe_print.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 10</div>
+        <img src="images/pur_elm_print.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 10</div>
+        <img src="images/aa_print.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">5 / 10</div>
+        <img src="images/ueland_print.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">6 / 10</div>
+        <img src="images/egg_print.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">7 / 10</div>
+        <img src="images/abbot_print.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">8 / 10</div>
+        <img src="images/3045_print.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">9 / 10</div>
+        <img src="images/girard_print.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">10 / 10</div>
+        <img src="images/lein_print.jpg" style="width:100%">
+      </div>
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+    
+    </div>
+  </div>
+  <!-- END MODAL -->
 
 
 	<footer>
